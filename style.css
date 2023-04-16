@@ -42,6 +42,9 @@ nav.space-nav {
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px
   }
   
   .container h1 {
@@ -52,6 +55,17 @@ nav.space-nav {
   .container p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    text-align: center;
+  }
+  #doc{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: left ;
+  }
+
+  .disclaimer{
+    font-size: 10px !important;
+    color: grey;
   }
   
   /* Button styles */
@@ -71,4 +85,32 @@ nav.space-nav {
     background-color: #333;
     color: #fff;
   }
-
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-group input[type="text"] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input[type="text"]::placeholder {
+    color: white;
+  }
+  #resultImage {
+    max-width: 100%;
+    max-height: 50vh;
+    margin: 1em 0;
+  }  
+#AU{
+  margin-left: -26px;
+}

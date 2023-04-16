@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="app.js" type="module"></script>
+    <title>Check what planet you found</title>
+</head>
+
+<body>
+    <nav class="space-nav">
+      <a class="logo" href="index.html"></a>
+      <div class="menu">
+        <a class="space-btn" href="documentation.html">Documentation</a>
+        <a class="space-btn" href="predict.html">Predict</a>    
+      </div>
+    </nav>
+    <div class="container">
+      <div>
+        <h1>Predict what type of exoplanet you found!</h1>
+      </div>
+      <div class="input-group">
+        <div><input type="text" id="mass_multiplier" placeholder="What is the mass"/>Jupiter</div>
+        <div><input type ="text" id="radius_multiplier" placeholder="What is the radius"/>Jupiter</div>
+        <div id="AU"><input type ="text" id="orbital_radius" placeholder="What is the orbital radius"/>AU</div>
+        <button class="space-btn" id="submit-button">Predict</button>
+      </div>    
+      <div>
+        <p id="userInput"></p>
+        <img id="resultImage" src="">
+      </div>
+      <!-- <div id="view"></div> -->
+    </div>
+  </body>
+</html>
