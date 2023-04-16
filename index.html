@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="app.js" type="module"></script>
+    <title>Check what planet you found</title>
+</head>
+
+<body>
+    <nav class="space-nav">
+        <a class="logo" href="#"></a>
+        <div class="menu">
+          <a class="space-btn" href="#">Documentation</a>
+          <a class="space-btn" href="#">Predict</a>   
+        </div>
+      </nav>
+    <div class="container">
+        <div>
+            <label for="Planet">Did you find an exoplanet? Check if it is a Gass Giant or not!</label>
+        </div>
+        <div>
+            <input type="text" id="mass_multiplier" placeholder="What is the mass_multiplier"/>
+            <input type ="text" id="radius_multiplier" placeholder="What is the radius_multiplier"/>
+            <input type ="text" id="eccentricity" placeholder="What is the eccentricity"/>
+            <button class="space-btn" id="submit-button">Predict</button>
+        </div>    
+        <div>
+            <p id="userInput"></p>
+        </div>
+        
+        <div id="view"></div>
+    </div>
+</body>
+</html>

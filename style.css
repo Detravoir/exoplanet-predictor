@@ -1,0 +1,74 @@
+body {
+    background-image: url('src/space.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+/* Navbar styles */
+nav.space-nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  nav.space-nav .space-btn{
+    margin-right: 10px;
+  }
+  
+  nav.space-nav .logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    background-image: url(src/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  nav.space-nav .menu {
+    display: flex;
+  }
+  
+  /* Container styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Button styles */
+  .space-btn {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .space-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
