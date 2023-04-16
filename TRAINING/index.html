@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/csv-parser@3.0.0/csv-parser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/csv-stringify@6.8.3/csv-stringify.min.js"></script>
+    <script defer src="app.js" type="module"></script>
+    <script defer src="rewrite.js" type="module"></script>
+    <title>Decision Tree Inleveropdracht</title>
+</head>
+<body>
+    <div>
+        <h3>Javascript Decision Tree</h3>
+        <a href="./webapp.html">vul je eigen waardes in en laat het model.json kijken of je diabetes hebt!</a>
+    </div>
+    <div id="view"></div>
+    <div id="accuracy">Accuracy : - </div>
+    <div id="matrix">
+        <p id="total"></p>
+        <p id="total-correct"></p>
+        <p id="actual-d"></p>
+        <p id="actual-no-d"></p>
+        <p id="predicted-wrong-no-d"></p>
+        <p id="predicted-wrong-d"></p>
+    </div>
+    <div>
+        <h4>Confusion Matrix</h4>
+        <table id="confusion">
+            <tr>
+                <td></td>
+                <td>Predicted Exoplanet</td>
+                <td>Predicted Non-Exoplanet</td>
+            </tr>
+            <tr>
+                <td>Actually Exoplanet</td>
+                <td id="actual-e"> </td>
+                <td id="predicted-wrong-non-e"></td>
+            </tr>
+            <tr>
+                <td>Actually Non-Exoplanet</td>
+                <td id="predicted-wrong-e"></td>
+                <td id="actual-non-e"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
